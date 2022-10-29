@@ -19,8 +19,7 @@ abstract class Dialog {
     public render():string {
         const okButton = this.createButton();
         console.log(okButton);
-        console.log(okButton.onClick());
-        return "The button have been rendered";
+        return "The button have been rendered\n" + okButton.onClick();
     }
 }
 
