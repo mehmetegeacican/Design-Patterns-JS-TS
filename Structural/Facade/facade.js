@@ -12,7 +12,12 @@ function getFetch(url,params = {}){
     }).then(res => res.json())
 }
 */
-
+/**
+ * This function is the facade function that acts as an operator to the apis
+ * @param {*string} url api endpoint
+ * @param {*string} params api possible addition :/ 
+ * @returns the data fetched after the api call
+ */
 function getFetch(url,params = {}){
     return axios({
         url:url,
@@ -21,17 +26,26 @@ function getFetch(url,params = {}){
     }).then(res => res.data)
 }
 
-
+/**
+ * The function for getting users
+ * @returns the users
+ */
 function getUsers() {
     return getFetch('https://jsonplaceholder.typicode.com/users')
 }
-
+/**
+ * The functio of getting a posts of a user
+ * @param {*string} userId the user id  
+ * @returns the posts of the user with the given id
+ */
 function geUserPosts(userId){
     return getFetch(`https://jsonplaceholder.typicode.com/posts`,{
         userId: userId
     })
 }
-
+/**
+ * Client Code 
+ */
 getUsers().then(users => {
     users.forEach(user => {
         -geUserPosts(user.id).then(posts => {
