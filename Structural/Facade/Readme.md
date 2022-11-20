@@ -12,3 +12,12 @@ A facade is a class that provides a simple interface to a complex subsystem whic
 ## Example 
 Operator services are perfect examples for Facades. When you call a place or a shop for a request, the operator acts like a facade, provides a simple voice interface (Press 9 for ...)  to the services.
 
+## Structure
+<li> The Facade: The operator --  provides convenient access to a particular part of the subsystem’s functionality. It knows where to direct the client’s request and how to operate all the moving parts. </li>
+<li> An Additional Facade class can be created to prevent polluting a single facade with unrelated features that might make it yet another complex structure. </li>
+<li> The Complex Subsystem consists of dozens of various objects. Subsystem classes aren’t aware of the facade’s existence. They operate within the system and work with each other directly. </li>
+<li> The Client:  uses the facade instead of calling the subsystem objects directly. </li>
+
+## Code Examples
+I have used Facade for API Integration before, the basic facade consisted of getReq,postReq,putReq,delReq, an additional facade was added for specific subsystems like getUsers etc..
+
