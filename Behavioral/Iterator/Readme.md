@@ -18,5 +18,8 @@ All iterators must implement the same interface.This allows compatibility to any
 ## Structure
 <li> 1-> The Client </li>
 <li> 2 -> Iterator Interface: declares the operations required for traversing collections </li>
+<li> 3-> Concrete Interators: Implements specific algorithms for traversing a collection. Traccks thee traversal progresss on its own </li>
+<li> 4-> IterableCollection: interface that declares one or multiple methods for getting ierators compatible with collection </li>
+<li> 5-> Concrete Collection : Returns new instances of particular concrete iterator class each time the client requests for one </li>
 
 ## Code Examples
