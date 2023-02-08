@@ -1,9 +1,7 @@
 # Memento
-Memento is a design pattern that lets you save and restore the previious state of an object without revealng the details of its implementation
+Memento is a design pattern that lets you save and restore the previous state of an object without revealing its structure,detailed implementation
 ## Problem
-Before executing an operation, the app saves a snapshot of the objects’ state, which can later be used to restore objects to their previous state. However,
-How to make a copy of the object’s private state? At here, we are encountering with an encapsualation prone to error. <br/>
-
+How to make a copy of the object’s private state? How to solve this tricky situation that occurs due to the encapsulation?
 ## Solution
 
 ## Structure
