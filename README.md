@@ -13,13 +13,6 @@ This project contains the implementations and notes on the design patterns. Java
 <li>Design Patterns are like blueprints. Clear steps to achieve the goal. you can see what the result and its features are, but the exact order of implementation is up to you!!</li>
 <br/>
 
-## What does a Design Pattern consists of?
-<li> Basic Description of the Problem and the basic solution </li>
-<li> Structure of the pattern shows each part of the pattern and how they are related. </li>
-<li> Motivation further explains the problem and the solution the pattern makes possible. </li>
-<li> Code example </li>
-<br/>
-
 # Pattern Types
 
 ## Creational
