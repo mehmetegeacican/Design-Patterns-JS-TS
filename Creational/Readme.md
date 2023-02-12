@@ -1,6 +1,6 @@
 # Creational Patterns
 
-Creational design patterns focuse on object creation and increases flexibility and reusability of object creations. <br/>
+Creational design patterns focus on object creation and increases flexibility and reusability of object creations. <br/>
 
 The patterns include : <br/>
 ## Builder Pattern 
