@@ -1,5 +1,5 @@
 # Flyweight Design Pattern
-Flyweight is a structural design pattern that lets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects instead of keeping all of the data in each object.
+Flyweight is a structural design pattern that lets you minimize memory usage by sharing some of the objects data with similar objects
 ## Problem
 Imagine that you've developed a game and you want to play that game with yor friends. What happens when you are able to play the game but your friends are not able to play the game due to the insufficient amount of RAM on their computer?
 

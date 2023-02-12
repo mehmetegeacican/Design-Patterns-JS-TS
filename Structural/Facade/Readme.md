@@ -1,5 +1,5 @@
 # Facade Pattern
-Facade is a structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.
+Facade is a structural design pattern that provides a unified and simplified interface to a library, a framework, classes or any other set of subsystems .
 
 ## Problem
 Imagine that you must make your code work with a broad set of objects that belong to a sophisticated library or framework. Ordinarily, you’d need to initialize all of those objects, keep track of dependencies, execute methods in the correct order, and so on.

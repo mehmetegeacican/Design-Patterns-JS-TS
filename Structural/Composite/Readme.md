@@ -1,5 +1,5 @@
 # Composite Pattern
-Composite is a structural design pattern that lets you compose objects into tree structures and then work with these structures as if they were individual objects.
+Composite is a structural design pattern that lets you compose objects into tree structures and then work loose coupled with these structures, treat them as if they were individual objects.
 
 ## Problem
 If your model can be represented as a tree, why not?
@@ -15,7 +15,6 @@ Another example: Armies of most countries are structured as hierarchies. An army
 ## Structure
 <li> 1-> Component: Interface that descriibes the common operations to simle and complex elements of the tree </li>
 <li> 2-> The Leaf: The basic element of the tree that doesn't have ub elements. Simplest element </li>
-<li> 3-> Composte: The elements that has sub elements, leaves or other  containers. It delegates the wok to its children </li>
-<li> 4-> The Client: The client code</li>
+<li> 3-> Composite: The elements that has sub elements, leaves or other  containers. It delegates the wok to its children </li>
 
 ## Code Example

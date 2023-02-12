@@ -12,9 +12,9 @@ Another solution is, <br/>
 A wrapper is an object that can be linked with some target object. The wrapper contains the same set of methods as the target and delegates to it all requests it receives. However, the wrapper may alter the result by doing something either before or after it passes the request to the target. <br/>
 
 ## Structure
-<li> The Component -> Declares the common interface for wrappers and objects </li>
-<li> Concrete Component -> Class of objects being wrapped. Defines the basic behaviour that can be altered by decorators </li>
-<li> The Base Decorator -> has a field for referencing thee wrapped object. Delegates all operations to the wrapped object </li>
-<li> Concrete Decorators -> define extra behaviours that acn be added to components dynamically. Overrides  the methods of the base decorators and execute their behaviour either before or after calling the parent method </li> <br/>
+<li> IComponent -> Interface for Components: declares the common methods for wrappers and objects </li>
+<li> Component ->The Class of objects being wrapped. Implements the IComponent interface. Defines the basic behaviour that can be altered by decorators </li>
+<li> The Base Decorator -> has a field for referencing thee wrapped object. Delegates all operations to the wrapped object. The Parent Decorator</li>
+<li> Decorators -> Child Decorators. Define extra behaviours that acn be added to components dynamically. Overrides  the methods of the base decorators and execute their behaviour either before or after calling the parent method </li> <br/>
 
 ## Code Example

@@ -1,5 +1,5 @@
 # Proxy Pattern
-Proxy is a design pattern that allows you to use a substitute for an object instead of the actual object.A proxy controls access to the original object, allowing you to perform something either before or after the request gets through to the original object.
+Proxy is a design pattern that allows you to use a substitute for an object instead of the actual object.A proxy controls access to the original object, allowing you to perform an operation before or after the request gets through to the original object.
 
 ## Problem 
 You have an object that you do need to use for specific times, but not all the time <br/>
