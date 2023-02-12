@@ -31,10 +31,9 @@ class Collection {
 }
 
 /**
- * Concrete Iterators implement various traversal algorithms. These classes
- * store the current traversal position at all times.
+ * Iterator Classes implement various traversal algorithms.
  */
-class ConcreteIterator implements IteratorItem<string> {
+class CIterator implements IteratorItem<string> {
 
     //Variables
     private collection:Collection;
@@ -77,8 +76,8 @@ function clientCode(){
     collection.addItems("It's me");
     collection.addItems("I was wondering about all");
 
-    const iterator = new ConcreteIterator(collection);
-    const reverse = new ConcreteIterator(collection,true);
+    const iterator = new CIterator(collection);
+    const reverse = new CIterator(collection,true);
     //Straight
     while(iterator.isValid()){
         console.log(iterator.nextItem());

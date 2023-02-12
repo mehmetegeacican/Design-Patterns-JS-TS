@@ -3,11 +3,13 @@ Behavioral Design patterns focus on algorithms and the relations between objects
 These design patterns include: <br/>
 
 ## Command
-This design pattern turns a request into a stand-aone object that contains all information about the request. This transformation lets you pass requests as a method arguments, delay or queue a request's execution, and support undoable operations.
+Turns a request into a stand-alone object that contains all information about the request. This transformation lets you pass requests as a method arguments, delay,queue,undo a request’s execution
 ## Iterator
-This design pattern lets you traverse elements of a collection without exposing its underlying representation(list,stack,tree...)
+Lets you traverse elements of a collection without
+revealing its structure(list,stack,tree)
 ## Mediator
-This design pattern lets you reduce chaotic dependencies between objects. The patter restricts direct communications between objects and forces them to collaborate only via a mediator object
+Lets you reduce chaotic dependencies between objects.
+The pattern prohibits direct communication between objects and forces them to connect only by a mediator
 ## Memento
 Lets you save and restore the previous state of an object without revealing detailed information about it regarding its structure, algorithms etc.
 ## Observer
