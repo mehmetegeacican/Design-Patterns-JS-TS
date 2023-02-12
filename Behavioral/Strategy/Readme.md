@@ -14,7 +14,7 @@ The client chooses the Strategy and Contect just uses the Class.
 Since the Strategy pattern is loose coupled, the addition and retraction of strategies is relatively easier.
 ## Structure
 <li> The Context: The navigator class that utilizes the Strategies </li>
-<li> The IStrategy: The Strategy interfface that all strategies implements </li>
+<li> The IStrategy: The Strategy interface that all strategies implements </li>
 <li> The Strategy classes:The Strategy classes that contains the algorithms </li> 
 
 ## Code Example
