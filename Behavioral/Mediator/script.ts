@@ -1,14 +1,12 @@
 /**
- * The Mediator interface declares a method used by components to notify the
- * mediator about various events. The Mediator may react to these events and
- * pass the execution to other components.
+ * The Mediator interface: Declares common methods for Mediators 
  */
 interface Mediator{
     notify(sender: object,event:string):void;
 }
 
 /**
- * Concrete Mediators implement cooperative behavior by coordinating several
+ * Mediators: Actual classses that implement cooperative behavior by coordinating several
  * components.
  */
 class AuthenticationDialog implements Mediator {
@@ -54,8 +52,7 @@ class AuthenticationDialog implements Mediator {
 }
 
 /**
- * The Base Component provides the basic functionality of storing a mediator's
- * instance inside component objects.
+ * The Componet Class --> The Parent class for components 
  */
 class Component {
     //Variables
@@ -79,8 +76,8 @@ class Component {
 }
 
 /**
- * Concrete Components implement various functionality. They don't depend on
- * other components. They also don't depend on any concrete mediator classes.
+ * Subclasses that utilizes te Parent Component and Alters certain behaviours
+ * according to themselves
  */
 class Textbox extends Component {
     public keyPress(input: string): void {
