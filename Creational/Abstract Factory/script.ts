@@ -1,12 +1,7 @@
 
 
 /**
- * The Abstract Factory interface declares a set of methods that return
- * different abstract products. These products are called a family and are
- * related by a high-level theme or concept. Products of one family are usually
- * able to collaborate among themselves. A family of products may have several
- * variants, but the products of one variant are incompatible with products of
- * another.
+ * The Abstract Factory interface declares common methods used in all factories
  */
 interface FurnitureFactory {
   createChair(): Chair;
@@ -15,10 +10,7 @@ interface FurnitureFactory {
 }
 
 /**
- * Concrete Factories produce a family of products that belong to a single
- * variant. The factory guarantees that resulting products are compatible. Note
- * that signatures of the Concrete Factory's methods return an abstract product,
- * while inside the method a concrete product is instantiated.
+ * Factory classes: produce a family of products that belong to same category
  */
 class VictorianFurnitureFactory implements FurnitureFactory {
   createChair(): Chair {
@@ -45,8 +37,7 @@ class ModernFurnitureFactory implements FurnitureFactory {
 }
 
 /**
- * Each distinct product of a product family should have a base interface. All
- * variants of the product must implement this interface.
+ * Interfaces of distinct products
  */
 interface Chair {
   showInfoChair(): void;
@@ -61,7 +52,7 @@ interface Sofa {
 }
 
 /**
- * These Concrete Products are created by corresponding Concrete Factories.
+ * Actual Classes of the Products
  */
 class VictorianChair implements Chair {
   style = "Victorian";
@@ -107,9 +98,8 @@ class ModernSofa implements Sofa{
 }
 
 /**
- * The client code works with factories and products only through abstract
- * types: AbstractFactory and AbstractProduct. This lets you pass any factory or
- * product subclass to the client code without breaking it.
+ * The Client Code
+ * @param factory The Factory that extends the Abstract F
  */
 
 function clientCode(factory: FurnitureFactory) {
@@ -121,9 +111,7 @@ function clientCode(factory: FurnitureFactory) {
   sofaInstance.showInfoSofa();
 }
 
-/**
- * The client code can work with any concrete factory class.
- */
+
 console.log("Abstract Factory");
 console.log("\n-----------------\n");
 const Victorian = new VictorianFurnitureFactory();
