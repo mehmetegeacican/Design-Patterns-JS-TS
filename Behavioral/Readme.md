@@ -9,7 +9,7 @@ This design pattern lets you traverse elements of a collection without exposing 
 ## Mediator
 This design pattern lets you reduce chaotic dependencies between objects. The patter restricts direct communications between objects and forces them to collaborate only via a mediator object
 ## Memento
-Memento is a design pattern that lets you save and restore the previous state of an object without revealing detailed information about it regarding its structure, algorithms etc.
+Lets you save and restore the previous state of an object without revealing detailed information about it regarding its structure, algorithms etc.
 ## Observer
 Defines a subscription mechanism that alerts and informs multiple objects (subscribers) about events that was published( any event that happended)(Pubsub mechanism)
 ## State
