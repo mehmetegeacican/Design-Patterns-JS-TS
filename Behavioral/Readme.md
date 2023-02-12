@@ -9,12 +9,12 @@ This design pattern lets you traverse elements of a collection without exposing 
 ## Mediator
 This design pattern lets you reduce chaotic dependencies between objects. The patter restricts direct communications between objects and forces them to collaborate only via a mediator object
 ## Memento
-This design pattern lets you save and restore the previous state of an object without revealing the details of its implementation.
+Memento is a design pattern that lets you save and restore the previous state of an object without revealing detailed information about it regarding its structure, algorithms etc.
 ## Observer
-This design pattern lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing
+Defines a subscription mechanism that alerts and informs multiple objects (subscribers) about events that was published( any event that happended)(Pubsub mechanism)
 ## State
-Lets an object alter its behavior when its internal state changes. It appears as if the object changed its class
+Allows an object to alter its behaviour when its internal state changes. The object acts according to the principles of a Finite State Machines
 ## Strategy
-Lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable
+Defines various algorithms in separate classes and allow their objects to manipulated by other algorithms as well (make objects interchangeable)
 ## Visitor
-Lets you separate algorithms from the objects on which they operate.
+Separates algorithms from the object structure that they operate.
