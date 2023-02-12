@@ -1,6 +1,6 @@
 # Creational Patterns
 
-Provide various object creation mechanisms, which increase flexibility and reuse of existing code.
+Creational design patterns focuse on object creation and increases flexibility and reusability of object creations. <br/>
 
 The patterns include : <br/>
 ## Builder Pattern 

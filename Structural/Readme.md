@@ -1,6 +1,6 @@
 # Structural Design Patterns
 
-Structural design patterns explain how to assemble objects and classes into larger structures, while keeping these structures flexible and efficient. <br/>
+Structural design patterns delve in assembling objects and classes into larger structures while maintainging flexibility and efficiency.<br/>
 These patterns include: <br/>
 ## Adapter
 Allows objects with incompatible interfaces to collaborate

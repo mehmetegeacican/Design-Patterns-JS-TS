@@ -1,5 +1,5 @@
 # Behavioral Design Patterns
-Behavioral design patterns are concerned with algorithms and the assignment of responsibilities between objects.
+Behavioral Design patterns focuse on algorithms and the relations between objects and classes. Increases efficiency in object communication and behaviours between objects. <br/>
 These design patterns include: <br/>
 
 ## Command
