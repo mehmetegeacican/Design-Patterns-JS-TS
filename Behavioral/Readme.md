@@ -1,5 +1,5 @@
 # Behavioral Design Patterns
-Behavioral Design patterns focuse on algorithms and the relations between objects and classes. Increases efficiency in object communication and behaviours between objects. <br/>
+Behavioral Design patterns focus on algorithms and the relations between objects and classes. Increases efficiency in object communication and behaviours between objects. <br/>
 These design patterns include: <br/>
 
 ## Command
