@@ -1,6 +1,5 @@
 # Singleton Design Pattern
-<li>In essence, it is a way of creatiing a single instance object that is shared in different classes. Objects share one instance of this object.</li>
-<li> Singleton lets you ensure that a class has only one instance, while providing a global access point to this instance </li>
+<li>In essence, it is a way of creating a single instance object that is shared in different classes. Objects share one instance of this object.</li>
 
 ## Problem 
 The Singleton pattern solves problems but at the same time `violates the Single Responsibility Principle`

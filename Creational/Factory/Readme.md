@@ -1,6 +1,6 @@
 #  Factory Pattern
 
-Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
+Factory Method is a creational design pattern that provides an interface for creating objects in a superclass.
 <br/>
 
 ## Problem
@@ -14,11 +14,10 @@ The objects are still created via the new operator, but it’s being called from
 
 ## Structure
 
-<li> The product interface --> declares the interface common to all objects that can be produced by creator or its subclasses </li>
-<li> Concrete Product --> Sub implementations of the product interface </li>
+<li> The product interface --> declares the interface that has common methods for products </li>
+<li> Product --> The Acual Product class.</li>
 <li> The Creator/Factory class --> declares the factory method that returns new product objects ( return type of this method must match the product interface.) </li>
-<li> Concrete Creators/Factories --> override the base factory method so that it can return a specific type of productt </li>
+<li> Concrete Creators/Factories --> override the base factory method so that it can return a specific type of product </li>
 
-## Examples
-Examples from the real world should be found.
+## Code Examples
 

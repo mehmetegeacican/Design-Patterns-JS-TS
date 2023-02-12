@@ -1,6 +1,6 @@
 # Abstract Factory
 
-Abstract Factory is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.
+Abstract Factory is a creational design pattern that lets you produce families of related objects without specifying their actual classes.
 
 ## Problem 
 Imagine you have: <br/>
@@ -22,10 +22,8 @@ These methods must return abstract product types represented by the interfaces w
 ## Structure
 
 <li> Abstract Products: declare interfaces for a set of distinct but related products which make up a product family. </li>
-<li> Concrete Products : 
- various implementations of abstract products, grouped by variants. Each abstract product (chair/sofa) must be implemented in all given variants </li>
-<li> The Abstract Factory: an interface that declares a set of methods for creating each of the abstract products. </li>
-<li> Concrete Factories implement creation methods of the abstract factory. Each Concrete Factory creates its own specific product </li>
-<li> The Client : works with any concrete factory/product variant, as long as it communicates with their objects via abstract interfaces. </li>
+<li> Products : various implementations of abstract products, grouped by variants. Each abstract product (chair/sofa) must be implemented in all given variants </li>
+<li> The Abstract Factory: an interface that declares common set of methods for creating each of the abstract products. </li>
+<li> Factories: Actual factories that implement creation methods of the abstract factory. Each Concrete Factory creates its own specific product </li>
 
 ## Code examples
