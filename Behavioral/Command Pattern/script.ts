@@ -42,6 +42,45 @@ class Subtract implements Command {
     } 
 }
 
+/**
+ * Multiply Command
+ */
+class Multiply implements Command {
+    //Variables
+    public valueToMultiply;
+    //Constructor
+    constructor(valueToMultiply:number) {
+        this.valueToMultiply = valueToMultiply;
+    };
+    //Methods
+    execute(val: number): number {
+        return val*this.valueToMultiply;
+    }
+    undo(val: number): number {
+        return val/this.valueToMultiply;
+    }
+};
+
+/**
+ * Divide Command
+ */
+class Divide implements Command {
+    //Variables
+    public valueToDivide;
+    //Constructor
+    constructor(valueToDivide:number) {
+        this.valueToDivide = valueToDivide;
+    };
+    //Methods
+    execute(val: number): number {
+       return val/this.valueToDivide;
+    }
+    undo(val: number): number {
+        return val*this.valueToDivide;
+    }
+    
+};
+
 class CalculatorInvoker {
     //Variables
     public value:number;
